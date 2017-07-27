@@ -43,7 +43,8 @@ public class LoginPage extends browserPage {
         passwordTextField.sendKeys(Password);
 
         WebElement loginButton=driver.findElement(By.id("u_0_2"));
-        loginButton.click();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(loginButton).click().build().perform();
 
         try{
             WebElement wrongPasswordText=driver.findElement(By.xpath(".//*[@id='error_box']/div[2]"));
