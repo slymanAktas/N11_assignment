@@ -52,8 +52,8 @@ public class testClass extends browserPage {
     public void login_Successfully(){
         loginPage.
         clickGirisYapButton().
-        loginViaFacebookIleGirisButton("maioiik_smithwitz_1465123955@tfbnw.net","1234qwe").
-        checkUserIsLogin("maioiik_smithwitz_1465123955@tfbnw.net");
+        loginViaFacebookIleGirisButton("suleyman@eftsoftware.com","1234qwe").
+        checkUserIsLogin("suleyman@eftsoftware.com");
     }
 
     @Test
@@ -115,8 +115,8 @@ public class testClass extends browserPage {
     public void login_With_Wrong_Password(){
         loginPage.
         clickGirisYapButton().
-        loginViaFacebookIleGirisButton("maioiik_smithwitz_1465123955@tfbnw.net","WrongPassword").
-        checkUserIsLogin("maioiik_smithwitz_1465123955@tfbnw.net");
+        loginViaFacebookIleGirisButton("suleyman@eftsoftware.com","WrongPassword").
+        checkUserIsLogin("suleyman@eftsoftware.com");
     }
 
 }
