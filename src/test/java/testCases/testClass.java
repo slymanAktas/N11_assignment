@@ -52,7 +52,7 @@ public class testClass extends browserPage {
     public void login_Successfully(){
         loginPage.
         clickGirisYapButton().
-        loginViaFacebookIleGirisButton("suleyman@eftsoftware.com","1234qwe").
+        loginViaFacebookIleGirisButton("suleyman@eftsoftware.com","111").
         checkUserIsLogin("suleyman@eftsoftware.com");
     }
 
